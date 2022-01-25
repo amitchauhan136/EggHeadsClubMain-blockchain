@@ -1,0 +1,301 @@
+*{
+    border: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+.background_of_minted_screen
+{
+    min-height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-image: url("../../../assets/Mint_background.png");
+    
+    background-size: cover;
+
+}
+
+.Mintsocialcontainer {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: space-evenly;
+  }
+  .Mintsocialimg {
+    padding: 10px 0px 10px 0px;
+    /* height: 80px; */
+    width: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  .LitePaper_div
+  {
+    display: block;
+  }
+  .LitePaper_div_mobile
+  {
+    display: none;
+  }
+  .Mintsocialimg:hover {
+    animation: mover 0.7s infinite alternate;
+  }
+
+  .Mintcontainerimg1 {
+  
+    height: 60px;
+    margin-top: 15px;
+    animation: mover 0.7s infinite alternate;
+  }
+  .Mintcontainerimg2
+  {
+     
+    margin-top: 15px;
+height: 50px;
+animation: mover 0.7s infinite alternate;   
+  }
+.first_div_of_minted_screen{
+   width: 100%;
+   display: flex;
+   justify-content: space-between; 
+   
+  position: absolute;
+top: 0px;
+  
+   padding-right: 2%;
+
+}
+.cross_icon_of_minted_screen{
+height: 35px;
+}
+
+.logo_of_minted_screen{
+    height: 250px; 
+    margin-bottom: 20px; 
+}
+
+
+.fancyicon_of_minted_screen{
+    
+    /* height:55px; */
+    margin: 30px 0px 35px 0px ; 
+    width:726px; 
+}
+.fancyicon_of_mob_view{
+    display: none;
+}
+
+.fourth_div_of_minted_screen{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:6%
+    
+}
+
+.insider_of_fourth_div_of_minted_screen{
+    background: #FEE9C4;
+    /* margin: 18px 5px; */
+    margin: 10px 10px;
+    padding: 5px 10px;
+    width: 300px;
+    border-radius: 8px;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 2px 2px;
+   padding: 16px 16px ;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+   
+}
+
+.eggheadsminted_of_minted_screen{
+    color: black;
+    font-size: 11px;
+    font-family: "PressStart2P";
+    -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+    -moz-transform: scale(1, 1.4); /* Firefox */
+    -ms-transform: scale(1, 1.4); /* IE 9 */
+    -o-transform: scale(1, 1.4); /* Opera */
+    transform: scale(1, 1.4);
+}
+
+
+.fifth_div_of_minted_screen{
+
+  
+   display: flex;
+    
+   justify-content: center;
+   align-items: center;
+    
+}
+
+
+
+.arrow_btn
+{
+    height: 45px;
+    width: 45px;
+   
+    border-style: solid;
+   
+   border-width: 2px;
+   border-radius: 12px;
+}
+.arrow_text
+{
+    font-family: 'PressStart2P';
+    color: #000;
+    margin-top: 5px;
+    font-size: 24px;
+}
+.input_of_minted_screen
+{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    padding:5px 5px;
+    border-style: solid;
+    box-shadow: 2px 2px;
+   border-width: 2px;
+   border-radius: 10px;
+ margin: 10px 5px 10px 5px;
+   font-size: 28px;
+   font-family: 'PressStart2P';
+   color: #000;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.gas_fee_req{
+height: 30px    ;
+margin-top: 20px;
+}
+
+
+.connect_button{
+    width:350px;
+
+    margin:10px 10px;
+}
+
+
+.connect_button:hover{
+    animation: mover 0.7s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  @keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+}
+
+
+
+@media screen and (max-width: 760px) {
+    .LitePaper_div
+    {
+      display: none;
+    }
+    .LitePaper_div_mobile
+    {
+      display: block;
+    }
+    .background_of_minted_screen  
+    {
+        background-image: url("../../../assets/Mint_background_mobile.png");
+    }
+    
+  
+
+}
+@media screen and (max-width: 580px) {
+
+        .gas_fee_req{
+            height: 25px;
+            
+            }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .logo_of_minted_screen{
+
+        height: 200px; 
+         
+        }
+
+   
+       
+        .input_of_minted_screen
+        {
+            width: 180px;
+        }
+        .connect_button{
+            width:280px;
+        }
+    .gas_fee_req{
+        margin-top: 40px;
+    }
+    .insider_of_fourth_div_of_minted_screen
+    {
+        width: 280px;
+    }
+    
+  }
+
+
+  
+@media screen and (max-width: 360px) {
+
+    .logo_of_minted_screen{
+
+        height: 200px; 
+         
+        }
+
+    
+
+     
+}
+
+

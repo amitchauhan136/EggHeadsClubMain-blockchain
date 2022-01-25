@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "build",
+    "target": "egg",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

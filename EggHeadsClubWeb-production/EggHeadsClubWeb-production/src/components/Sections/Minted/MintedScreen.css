@@ -1,0 +1,423 @@
+*{
+    border: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+.background_of_minted_screen{
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    background: url("../../../assets/Pinkbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.first_div_of_minted_screen{
+   width: 100%;
+   display: flex;
+   justify-content: flex-end; 
+   height:75px;
+   padding-top: 2%;
+   padding-right: 2%;
+
+}
+.cross_icon_of_minted_screen{
+height: 35px;
+}
+
+.logo_of_minted_screen{
+    height: 140px;  
+}
+
+
+.fancyicon_of_minted_screen{
+    height:55px;
+    margin: 20px 0px 50px 0px ; 
+    /* width:380px;  */
+}
+
+
+.fourth_div_of_minted_screen{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:6%
+    
+}
+.insider_of_fourth_div_of_minted_screen{
+    background: rgba(195,76,118,0.7);
+    /* margin: 18px 5px; */
+    margin-top: 13px;
+    margin-bottom: 18px;
+    padding: 5px 10px;
+    width:344px;
+    height: 42px;
+    /* background-color: gray; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+   
+}
+
+.eggheadsminted_of_minted_screen{
+    color: white;
+    font-size: 10px;
+    font-family: "PressStart2P";
+    -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+    -moz-transform: scale(1, 1.4); /* Firefox */
+    -ms-transform: scale(1, 1.4); /* IE 9 */
+    -o-transform: scale(1, 1.4); /* Opera */
+    transform: scale(1, 1.4);
+}
+
+
+.fifth_div_of_minted_screen{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 0%;
+  
+    
+}
+
+.input_of_minted_screen{
+    background-color: rgba(168,64,101,255);
+    border: 3px solid black;
+    height: 45px;
+    width:740px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+   font-size: 25px;
+   font-family: "PressStart2P";
+   -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+   -moz-transform: scale(1, 1.4); /* Firefox */
+   -ms-transform: scale(1, 1.4); /* IE 9 */
+   -o-transform: scale(1, 1.4); /* Opera */
+   transform: scale(1, 1.4);
+}
+
+.gas_fee_req{
+ margin-top: 1.5%;
+ margin-bottom: 0.5%;
+
+}
+
+.connect_button{
+    
+    margin-top:1%;
+    margin-bottom: 2% ;
+}
+
+
+.connect_button:hover{
+    animation: mover 0.7s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  @keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+}
+
+
+
+
+@media screen and (max-width: 760px) {
+
+    .logo_of_minted_screen{
+
+        height: 125px; 
+         
+        }
+
+    .fancyicon_of_minted_screen{
+
+        height:40px;
+        margin: 20px 0px 50px 0px   ;
+        width:300px
+    }
+    
+.input_of_minted_screen{
+    background-color: rgba(168,64,101,255);
+    border: 3px solid black;
+    height: 42px !important;
+    width:540px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+   font-size: 22px;
+   font-family: "PressStart2P";
+   -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+   -moz-transform: scale(1, 1.4); /* Firefox */
+   -ms-transform: scale(1, 1.4); /* IE 9 */
+   -o-transform: scale(1, 1.4); /* Opera */
+   transform: scale(1, 1.4);
+
+
+}
+
+
+.insider_of_fourth_div_of_minted_screen{
+    background: rgba(195,76,118,0.7);
+    /* margin: 18px 5px; */
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding: 10px 20px;
+    width:fit-content;
+    height: 42px;
+    /* background-color: gray; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    width:300px
+}
+
+.eggheadsminted_of_minted_screen{
+    color: white;
+    font-size: 8.5px;
+    
+    font-family: "PressStart2P";
+    -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+    -moz-transform: scale(1, 1.4); /* Firefox */
+    -ms-transform: scale(1, 1.4); /* IE 9 */
+    -o-transform: scale(1, 1.4); /* Opera */
+    transform: scale(1, 1.4);
+}
+
+
+.gas_fee_req{
+    margin: 1.5%;
+    width:300px; 
+    }
+
+.connect_button{
+        width:300px;
+        margin-top:2%;
+ }
+
+}
+@media screen and (max-width: 580px) {
+
+    
+    
+    .input_of_minted_screen{
+        background-color: rgba(168,64,101,255);
+        border: 3px solid black;
+        height:40px !important;
+        width:440px;
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+       font-size: 20px;
+       font-family: "PressStart2P";
+       -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+       -moz-transform: scale(1, 1.4); /* Firefox */
+       -ms-transform: scale(1, 1.4); /* IE 9 */
+       -o-transform: scale(1, 1.4); /* Opera */
+       transform: scale(1, 1.4);
+    
+    
+    }
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .logo_of_minted_screen{
+
+        height: 130px; 
+         
+        }
+
+    .fancyicon_of_minted_screen{
+        
+    height:44px;
+    margin: 20px 0px 50px 0px ; 
+    width:290px; 
+       
+    }
+    
+
+.third_div_of_minted_screen{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center !important;
+    justify-content: center !important;
+    height:12%;
+    margin: 0 auto !important;
+    }
+
+    .insider_of_fourth_div_of_minted_screen {
+        width:290px
+    }
+
+
+
+
+
+    .input_of_minted_screen{
+        background-color: rgba(168,64,101,255);
+        border: 3px solid black;
+        height: 37px !important;
+        width:340px;
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+       font-size: 18px;
+       font-family: "PressStart2P";
+       -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+       -moz-transform: scale(1, 1.4); /* Firefox */
+       -ms-transform: scale(1, 1.4); /* IE 9 */
+       -o-transform: scale(1, 1.4); /* Opera */
+       transform: scale(1, 1.4);
+    
+    
+    }
+    
+    
+    .sixth_div_of_minted_screen{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+       
+        align-items: center !important;
+        justify-content: center !important;
+        height:10%;
+        margin: 0% auto;
+        margin-top: 2%;
+        width:260px;
+    
+    }
+
+    .seventh_div_of_minted_screen{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center !important;
+        justify-content: center !important;
+        height:13%;
+        width:290px;
+        margin: 0 auto;
+        margin-top: 5%;
+    
+    }
+  }
+
+
+  
+@media screen and (max-width: 360px) {
+
+    .logo_of_minted_screen{
+
+        height: 110px; 
+         
+        }
+
+    .fancyicon_of_minted_screen{
+
+        height:45px;
+        margin: 20px 0px 50px 0px   ;
+        width:225px
+    }
+
+    .insider_of_fourth_div_of_minted_screen {
+        width:225px
+    }
+
+
+    
+.insider_of_fourth_div_of_minted_screen{
+    background: rgba(195,76,118,0.7);
+    /* margin: 18px 5px; */
+    margin-top: 13px;
+    margin-bottom: 13px;
+    padding: 10px 10px;
+    width:fit-content;
+    height: 42px;
+    /* background-color: gray; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    width:225px
+}
+
+.eggheadsminted_of_minted_screen{
+    color: white;
+    font-size: 8.5px;
+    
+    font-family: "PressStart2P";
+    -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+    -moz-transform: scale(1, 1.4); /* Firefox */
+    -ms-transform: scale(1, 1.4); /* IE 9 */
+    -o-transform: scale(1, 1.4); /* Opera */
+    transform: scale(1, 1.4);
+}
+
+
+    .input_of_minted_screen{
+        background-color: rgba(168,64,101,255);
+        border: 3px solid black;
+        height: 35px !important;
+        width:280px;
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+       font-size: 16px;
+       font-family: "PressStart2P";
+       -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+       -moz-transform: scale(1, 1.4); /* Firefox */
+       -ms-transform: scale(1, 1.4); /* IE 9 */
+       -o-transform: scale(1, 1.4); /* Opera */
+       transform: scale(1, 1.4);
+    
+    }
+
+    .gas_fee_req{
+        margin: 1%;
+        margin-top: 6%;   
+        margin-bottom: 3%; 
+        width:270px
+  
+       }
+
+       .connect_button{
+        width:270px;
+        margin-top:3%;
+        margin-bottom: 3%;
+    }
+}

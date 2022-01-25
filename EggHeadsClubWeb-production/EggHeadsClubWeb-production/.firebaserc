@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "eggheads-club"
+  },
+  "targets": {
+    "eggheads-club": {
+      "hosting": {
+        "egg": [
+          "egg-heads-club"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1858 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  border: 0;
+}
+
+@media (orienation: landscape) {
+  .modal-video-close-btn {
+    top: 15px !important;
+    right: 15px !important;
+  }
+}
+ol {
+  list-style-position: inside;
+}
+
+a {
+  border-style: hidden;
+  border-width: 0px;
+  color: #566c8a;
+}
+.App {
+  width: 100vw;
+}
+.logo-scroll {
+  width: 50px;
+  position: fixed;
+  top: 10px;
+  right: 3%;
+  border-radius: 5px;
+  display: none;
+  z-index: 2;
+  height: 50px;
+  cursor: pointer;
+}
+.menu-div {
+  position: fixed;
+  top: 65px;
+
+  align-self: center;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  width: 100%;
+}
+.menu-row1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.menu-row2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  justify-content: space-between;
+}
+.menu-header {
+  width: 90%;
+  display: flex;
+
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+
+  justify-content: space-between;
+  background-color: #282828;
+}
+
+.seperator {
+  width: 100vw;
+  height: 10px;
+
+  background-color: #282828;
+}
+.hamburger {
+  width: 50px;
+  position: fixed;
+  top: 10px;
+  left: 3%;
+  display: none;
+  z-index: 2;
+  height: 50px;
+  cursor: pointer;
+}
+
+.menu-hamburger {
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+}
+.menu-hamburger-logo {
+  width: 45px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 45px;
+}
+.menu-header-div {
+  justify-content: space-between;
+  margin: 10px;
+  display: flex;
+}
+.menu-footer-div {
+  display: flex;
+}
+.footer-text {
+  font-size: 10px;
+  color: white;
+  margin: 10px;
+  padding: 2px;
+  font-family: "PressStart2P";
+  border-bottom-color: white;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+.menu-label {
+  margin: 4px 4px;
+}
+
+.menu-pic {
+  width: 120px;
+
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.menu-pic:hover {
+  width: 130px;
+}
+.menu-footer-img {
+  cursor: pointer;
+  height: 30px;
+  margin: 0px 0px 0px 15px;
+}
+
+.SubHeading-Text {
+  font-size: 8px;
+  margin: 10px 0px 10px 0px;
+  font-family: "PressStart2P";
+  color: white;
+  align-self: center;
+
+  text-align: center;
+  -webkit-transform: scale(1, 1.5); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.5); /* Firefox */
+  -ms-transform: scale(1, 1.5); /* IE 9 */
+  -o-transform: scale(1, 1.5); /* Opera */
+  transform: scale(1, 1.5);
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black;
+
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+.Main-Nav img:last-child {
+  display: none;
+}
+.Main-Nav:hover img:last-child {
+  display: inline-block;
+}
+.Main-Nav:hover img:first-child {
+  display: none;
+}
+
+.Navimg1 {
+  cursor: pointer;
+  height: 21px;
+  margin-top: 2px;
+}
+
+.Navimg1-hover {
+  cursor: pointer;
+  height: 21px;
+  margin-top: 2px;
+}
+
+.Navimg2,
+.Navimg2-hover {
+  cursor: pointer;
+  max-height: 20px;
+}
+
+.Navimg3,
+.Navimg3-hover {
+  cursor: pointer;
+  max-height: 21px;
+}
+
+.Navimg4,
+.Navimg4-hover {
+  cursor: pointer;
+  max-height: 20px;
+}
+
+.Navimg5-hover,
+.Navimg5 {
+  cursor: pointer;
+  max-height: 20px;
+}
+/*----------------------- Section 1 -------------------- */
+.Main {
+  background-image: url("./assets/Section1Background.png");
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #282828;
+  background-size: cover;
+  background-position: center;
+}
+.EggImage {
+  width: 40px;
+  margin-right: 10px;
+  height: 50px;
+}
+.ConnectImg {
+  width: 110px;
+
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.ConnectImg:hover {
+  width: 120px;
+}
+.LogoImg {
+  width: 250px;
+  margin-left: 12px;
+  margin-top: 80px;
+  margin-bottom: 25px;
+
+  height: 220px;
+}
+.containerimg {
+  width: 400px;
+  height: 60px;
+  margin-top: 15px;
+}
+.containerimg1 {
+  width: 400px;
+  height: 60px;
+  margin-top: 15px;
+  animation: mover 0.7s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+.Header {
+  height: 45px;
+  overflow: hidden;
+  position: fixed;
+  padding: 5px 5px 5px 0px;
+
+  top: 10px;
+  z-index: 10;
+  width: 700px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #282828;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* .header-label
+{
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    
+    font-family: 'PressStart2P';
+    transition: all .4s ease-in-out;
+} */
+
+.socialcontainer {
+  flex-direction: row;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-evenly;
+}
+.socialimg {
+  padding: 10px 0px 10px 0px;
+  height: 80px;
+  width: 80px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.socialimg:hover {
+  animation: mover 0.7s infinite alternate;
+}
+.textimg {
+  margin: 20px 0px 20px 0px;
+  height: 20px;
+}
+.textimg1 {
+  margin: 20px 0px 20px 0px;
+  height: 20px;
+}
+.textregular {
+  display: block;
+}
+.textsmall {
+  display: none;
+}
+/*----------------------- Section 2 -------------------- */
+.Main1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+}
+.GetyouEgg-Egg {
+  width: 150px;
+  height: 150px;
+
+  margin-top: -90px;
+  position: absolute;
+}
+.slideshow-div
+{
+    position: relative;
+    z-index: 0;
+    background-image: url('./assets/BG-Marquee.png');
+    width: 100%;
+    height: 800px;
+    
+}
+.slideshow
+{
+  
+ 
+height: 100%;
+}
+
+.GetyourEggHeads-div
+{
+    z-index: 1;
+   
+    position: absolute;
+width: 100%;
+    top: 0;
+    height: 800px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  
+ 
+}
+.GetyourEggHeads-box {
+  width: 370px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border: 8px solid;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 8px 8px;
+}
+.GetyourEggHeads-Heading {
+  margin-left: 5px;
+  margin-top: 70px;
+  width: 235px;
+  height: 85px;
+}
+.GetyourEggHeads-text {
+  width: 285px;
+  text-align: center;
+  font-size: 10px;
+
+  line-height: 13px;
+  margin: 40px 0px 40px 5px;
+  font-family: "PressStart2P";
+  color: black;
+  align-self: center;
+  text-align: center;
+  -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.4); /* Firefox */
+  -ms-transform: scale(1, 1.4); /* IE 9 */
+  -o-transform: scale(1, 1.4); /* Opera */
+  transform: scale(1, 1.4);
+}
+.HatchingSoon {
+
+  height: 45px;
+  
+  margin: 10px 5px 20px 5px;
+ 
+
+  animation: mover 0.7s infinite alternate;
+}
+
+/*----------------------- Section 3 -------------------- */
+.Main2 {
+  display: flex;
+  background-image: url("./assets/yellowbackground.png");
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 700px;
+
+  align-items: center;
+  background-position: center;
+  background-size: contain;
+}
+.Main2-row {
+  display: flex;
+
+  width: 100%;
+  justify-content: center;
+
+  padding: 20px 0px 40px 0px;
+  min-height: 600px;
+
+  align-items: center;
+}
+
+.Rarity-box-parent {
+  width: 55%;
+  padding-bottom: 40px;
+}
+
+.Rarity-box {
+  background-color: white;
+  border: 8px solid;
+  border-radius: 30px;
+  box-shadow: 10px 10px;
+  width: 78%;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-size: 100% 100%, cover;
+
+  padding: 30px;
+}
+.Avatar-img1 {
+  display: none;
+}
+.Rarity-box-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.text1 {
+  display: none;
+}
+.text2 {
+  display: block;
+}
+.Rarity-col {
+  flex: 1;
+}
+.col1 {
+  margin-right: 10%;
+  flex: 1;
+}
+.Rarity-rows {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0px 10px 0px;
+
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #edcedd;
+}
+.Rarity-heading {
+  height: 50px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.Rarity-heading1 {
+  display: none;
+  margin-top: 30px;
+  height: 40px;
+}
+.Rarity-text {
+  font-size: 10px;
+  line-height: 14px;
+  width: 75%;
+
+  font-family: "PressStart2P";
+  color: black;
+  align-self: center;
+  text-align: left;
+  -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.4); /* Firefox */
+  -ms-transform: scale(1, 1.4); /* IE 9 */
+  -o-transform: scale(1, 1.4); /* Opera */
+  transform: scale(1, 1.4);
+}
+.Class {
+  height: 40px;
+  margin-bottom: 10px;
+}
+.Variation {
+  height: 40px;
+
+  margin-bottom: 10px;
+}
+.Avatar-div {
+  height: 550px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.Avatar-img {
+  width: 450px;
+}
+/*----------------------- Section 4 -------------------- */
+.Main3 {
+  display: flex;
+  background-image: url("./assets/Pinkbackground.png");
+  width: 100vw;
+  justify-content: center;
+
+  align-items: center;
+
+  flex-direction: column;
+  background-color: #282828;
+  background-position: center;
+  background-size: contain;
+}
+.introeggjumpbox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 650px;
+  min-height: 320px;
+  margin-top: 20px;
+  border: 8px solid;
+  padding: 10px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 8px 8px;
+}
+.introeggjump {
+  margin-top: 20px;
+  
+  width: 650px;
+}
+.Mobile {
+  background-image: url("./assets/egg-jump-preview.png");
+  height: 550px;
+  width: 370px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 100%, cover;
+}
+.Play-btn {
+  padding: 20px 20px;
+  width: 100px;
+  cursor: pointer;
+  animation: mover 0.7s infinite alternate;
+}
+.Main3-Litepaper {
+  animation: mover 0.7s infinite alternate;
+  margin-top: 20px;
+  margin-left: 5px;
+  width: 680px;
+}
+.Main3-Litepaper-Mobile {
+  display: none;
+}
+.Main3text1 {
+  display: block;
+}
+.Main3text2 {
+  display: none;
+}
+.Main3-marquee {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+
+  flex-direction: row;
+  background-color: #80b3d0;
+  border-width: 6px 0px 6px 0px;
+  border-color: #c3e5f8;
+  border-style: solid;
+}
+.Main3-img {
+  height: 100px;
+}
+.Main3-text {
+  font-size: 10px;
+  width: 90%;
+  margin-top: 50px;
+
+  line-height: 13px;
+  font-family: "PressStart2P";
+  color: black;
+  align-self: center;
+
+  -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.4); /* Firefox */
+  -ms-transform: scale(1, 1.4); /* IE 9 */
+  -o-transform: scale(1, 1.4); /* Opera */
+  transform: scale(1, 1.4);
+}
+
+.Main3-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+  align-self: center;
+}
+.arrow {
+  margin: 0px 10px 0px 10px;
+
+  height: 65px;
+}
+.Main3-div-row {
+  display: flex;
+  height: 100px;
+  margin-top: 20px;
+  align-items: center;
+
+  justify-content: space-between;
+  width: 250px;
+}
+
+.Main3-div-row2 {
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.divder {
+  background-color: black;
+  width: 3px;
+  height: 80px;
+}
+
+/*----------------------- Section 5 -------------------- */
+.Main4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #80b3d0;
+  min-height: 380px;
+  background-image: url("./assets/eggbxbackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Main4-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.col {
+  width: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-col {
+  height: 220px;
+  display: flex;
+
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+}
+.text-col {
+  display: flex;
+  width: 220px;
+
+  line-height: 12px;
+}
+.Main4-col1-img1 {
+  width: 90px;
+}
+.EggBux-body-text {
+  font-size: 9px;
+  margin: 20px 0px 20px 0px;
+  font-family: "PressStart2P";
+  color: white;
+
+  align-self: center;
+
+  text-align: center;
+  -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.4); /* Firefox */
+  -ms-transform: scale(1, 1.4); /* IE 9 */
+  -o-transform: scale(1, 1.4); /* Opera */
+  transform: scale(1, 1.4);
+}
+.Main4-col2-img1 {
+  width: 110px;
+}
+
+.Main4-col3-img1 {
+  width: 120px;
+}
+
+.Main4-Heading {
+  height: 45px;
+  margin: 40px 0px 20px 0px;
+}
+/*----------------------- Section 6 -------------------- */
+
+.Main5-row {
+  margin: 20px 0px 20px 0px;
+  display: flex;
+
+  justify-content: center;
+  width: 100%;
+
+  align-items: center;
+}
+.Main5-card {
+  height: 380px !important;
+  margin: auto;
+  width: 230px !important;
+  margin: 10px 10px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./assets/mintbox.png");
+
+  background-size: 100% 100%, cover;
+  animation: mover 0.4s infinite alternate;
+}
+
+.card2 {
+  background-image: url("./assets/Q1box.png");
+}
+.card3 {
+  background-image: url("./assets/Q2box.png");
+}
+.card4 {
+  background-image: url("./assets/Q3box.png");
+}
+.button-row {
+  flex-direction: row;
+
+  display: flex;
+  display: none;
+  align-items: center;
+
+  justify-content: space-evenly;
+}
+.Main5 {
+  display: flex;
+  background-image: url("./assets/BlueBackground.png");
+  width: 100vw;
+  flex-direction: column;
+
+  min-height: 700px;
+
+  align-items: center;
+  background-position: center;
+  background-size: contain;
+}
+.Main5-Heading {
+  height: 50px;
+  margin: 40px 0px 40px 0px;
+}
+.Main5-card-heading {
+  height: 30px;
+
+  margin: 20px 0px 20px 0px;
+}
+
+.Main5-Text {
+  font-size: 9px;
+  margin: 40px 0px 20px 0px;
+  font-family: "PressStart2P";
+  color: white;
+  line-height: 12px;
+  align-self: center;
+  width: 80%;
+  -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.4); /* Firefox */
+  -ms-transform: scale(1, 1.4); /* IE 9 */
+  -o-transform: scale(1, 1.4); /* Opera */
+  transform: scale(1, 1.4);
+}
+.Roadmap-footer1 {
+  width: 100%;
+  border-top-width: 8px;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+
+  border-color: #f0f0f067;
+  height: 120px;
+  margin: 40px 0px 0px 0px;
+  animation: mymove 2s step-end infinite;
+  background-color: #ff65a1;
+}
+
+.bunny-avatar {
+  position: absolute;
+  margin-top: -30px;
+  left: 5%;
+  width: 200px;
+}
+.Roadmap-text {
+  margin-left: 25%;
+  width: 800px;
+}
+
+.small {
+  display: none;
+}
+.regular {
+  display: block;
+}
+/*----------------------- Section 7 -------------------- */
+.Main6 {
+  display: flex;
+  background-image: url("./assets/Pinkbackground.png");
+  width: 100vw;
+  flex-direction: column;
+  background-color: #282828;
+  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: contain;
+}
+.Main6-Heading {
+  height: 40px;
+  margin: 45px 0px 40px 0px;
+}
+
+.Team-div-row {
+  width: 100%;
+
+  margin: 30px 0px 30px 0px;
+  display: flex;
+
+  overflow-x: scroll;
+}
+.Team-div-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.Team-div {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.Team-div {
+  width: 250px;
+
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.egg {
+  margin: 10px 0px 10px 0px;
+
+  width: 210px;
+}
+.name-div {
+  background-color: rgb(255, 183, 0);
+  padding: 15px 25px 15px 25px;
+  width: 160px;
+  border-width: 5px 5px 5px 5px;
+  border-radius: 12px;
+  border-style: solid;
+  box-shadow: 2px 2px;
+}
+.Main6-icon-div {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.Main6-icon {
+  height: 30px;
+}
+.name {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  font-family: "PressStart2P";
+  -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.4); /* Firefox */
+  -ms-transform: scale(1, 1.4); /* IE 9 */
+  -o-transform: scale(1, 1.4); /* Opera */
+  transform: scale(1, 1.4);
+}
+.designation {
+  font-size: 10px;
+  color: white;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  font-family: "PressStart2P";
+  -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.4); /* Firefox */
+  -ms-transform: scale(1, 1.4); /* IE 9 */
+  -o-transform: scale(1, 1.4); /* Opera */
+  transform: scale(1, 1.4);
+}
+
+/*----------------------- Section 8 -------------------- */
+
+.Main8 {
+  display: flex;
+  background-image: url("./assets/faqbackground.png");
+  width: 100vw;
+  flex-direction: column;
+  padding: 20px 0px 20px 0px;
+  min-height: 1000px;
+  background-color: #282828;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.Main8-Heading {
+  height: 48px;
+  margin: 40px 0px 40px 0px;
+}
+
+.title-div {
+  background-color: rgb(255, 183, 0);
+  padding: 15px 15px 15px 15px;
+  width: 100%;
+  border-width: 0px 0px 8px 0px;
+  overflow: hidden;
+  border-radius: 0px 0px 0px 8px;
+  border-style: solid;
+  box-sizing: border-box;
+}
+.title {
+  font-size: 14px;
+  color: white;
+  line-height: 18px;
+  width: 95%;
+  -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.4); /* Firefox */
+  -ms-transform: scale(1, 1.4); /* IE 9 */
+  -o-transform: scale(1, 1.4); /* Opera */
+  transform: scale(1, 1.4);
+  font-family: "PressStart2P";
+}
+
+.label {
+  font-size: 10px;
+
+  width: 95%;
+  line-height: 12px;
+  font-family: "PressStart2P";
+  -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.4); /* Firefox */
+  -ms-transform: scale(1, 1.4); /* IE 9 */
+  -o-transform: scale(1, 1.4); /* Opera */
+  transform: scale(1, 1.4);
+}
+
+.label-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe9c7;
+  padding: 35px 0px 35px 0px;
+
+  width: 95%;
+}
+
+.p2etext {
+  padding: 10px 5px 10px 5px;
+}
+.card-div {
+  background-color: #f9ef90;
+  border-width: 4px 7px 7px 4px;
+  border-radius: 8px;
+  width: 500px;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0px 10px 0px;
+  border-style: solid;
+}
+.title {
+  font-size: 14px;
+  color: white;
+  font-family: "PressStart2P";
+}
+/*----------------------- Section 9 -------------------- */
+
+@keyframes mymove {
+  0% {
+    background-color: #ff65a1;
+  }
+  25% {
+    background-color: #76b2ff;
+  }
+  50% {
+    background-color: #ffc71c;
+  }
+  75% {
+    background-color: #b56bb9;
+  }
+}
+/*----------------------- Section 11 -------------------- */
+.Main11 {
+  width: 100%;
+  padding: 60px 0px 60px 0px;
+  background-color: #fff5d4;
+  background-image: url("./assets/thatsallyolks-background.png");
+  background-size: cover;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+}
+.Main11-heading {
+  width: 790px;
+  margin: 0px 0px 20px 0px;
+}
+.Main11-Opensea {
+  width: 360px;
+  animation: mover 0.7s infinite alternate;
+  height: 60px;
+}
+.Main11-socialcontainer {
+  margin: 20px 0px 20px 0px;
+  flex-direction: row;
+  width: 220px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+.Main11-socialimg {
+  padding: 10px 0px 10px 0px;
+  height: 80px;
+  width: 80px;
+}
+.Main11-socialimg:hover {
+  animation: mover 0.7s infinite alternate;
+}
+.Main11-box {
+  width: 280px;
+}
+.text-img {
+  height: 30px;
+}
+.footer {
+  width: "100%";
+  min-height: 5vh;
+  background-color: #282828;
+  padding: 5px 0px 5px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-heading {
+  font-size: 10px;
+  margin: 20px 0px 20px 0px;
+  font-family: "PressStart2P";
+  color: white;
+  align-self: center;
+
+  line-height: 12px;
+  text-align: center;
+  -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+  -moz-transform: scale(1, 1.4); /* Firefox */
+  -ms-transform: scale(1, 1.4); /* IE 9 */
+  -o-transform: scale(1, 1.4); /* Opera */
+  transform: scale(1, 1.4);
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+/*----------------------- Terms -------------------- */
+.Privacy {
+  width: 100%;
+  height: 100%;
+
+}
+.Privacy-header {
+  background-image: url("./assets/PrivacyBackground.png");
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  height: 240px;
+}
+.PrivacyPolicyHeading {
+  height: 40px;
+}
+.Privacy-body {
+  width: 100%;
+  background-image: url("./assets/Scenery1.png");
+  display: flex;
+
+  min-height: 2200px;
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  justify-content: center;
+}
+.Privacy-row {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.Privacy-Egg {
+  width: 20%;
+}
+.Privacy-Card {
+  width: 1200px;
+
+  position: absolute;
+  border-width: 10px 20px 20px 10px;
+  border-radius: 20px;
+  border-style: solid;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -60px 0px 40px 0px;
+  padding: 20px 0px 60px 0px;
+}
+
+.Privacy-text {
+  font-size: 10px;
+  margin-top: 20px;
+  line-height: 14px;
+  font-family: "PressStart2P";
+  width: 70%;
+  padding-left: 3%;
+  background-color: green   ;
+
+}
+.Privacy-text1 {
+  min-height: 10px;
+
+  overflow-y: hidden;
+  /* background-color: #566c8a; */
+}
+.Point-heading {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 20px 0 20px 0px;
+
+  font-family: "PressStart2P";
+}
+.Point-text {
+  font-size: 10px;
+  line-height: 14px;
+  font-family: "PressStart2P";
+ 
+}
+.Privacy-Logo {
+  margin-top: 20px;
+  height: 120px;
+}
+
+@media screen and (max-width: 1500px) {
+  /*----------------------- Section 6 -------------------- */
+
+  /* .bunny-avatar
+{
+  
+ left:6%;
+}
+  .Roadmap-text
+{
+ 
+ margin-left: 25%;
+} */
+}
+
+
+
+
+
+@media screen and (min-width: 1400px) {
+  /*----------------------- Section 6 -------------------- */
+
+  .bunny-avatar {
+    left: 8%;
+  }
+  .Roadmap-text {
+    margin-left: 28%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .Privacy-body {
+    min-height: 2300px;
+  }
+
+  .Privacy-Card {
+    width: 950px;
+  }
+  .Privacy-text {
+    width: 75%;
+  }
+  .Privacy-Egg {
+    width: 20%;
+  }
+  /*----------------------- Section 6 -------------------- */
+  .bunny-avatar {
+    left: 2%;
+  }
+  .Roadmap-text {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .button-row {
+    display: flex;
+  }
+  /*----------------------- Section 4 -------------------- */
+  .Main3-div-row2 {
+    width: 480px;
+  }
+  .introeggjumpbox {
+    width: 400px;
+    min-height: 440px;
+  }
+  .Main3-text
+  {
+    margin-top: 65px;
+  }
+  .introeggjump {
+    margin-top: 20px;
+    width: 400px;
+  }
+ 
+ 
+  .Main3-Litepaper {
+  
+
+    width: 440px;
+  }
+  /*----------------------- Section 6 -------------------- */
+
+  .bunny-avatar {
+    position: absolute;
+    margin-top: -30px;
+    left: 2%;
+    width: 200px;
+  }
+  .Roadmap-text {
+    margin-left: 25%;
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /*----------------------- Section 5 -------------------- */
+
+  .Main4-Heading {
+    height: 40px;
+    margin: 20px 0px 20px 0px;
+  }
+
+  /*----------------------- Section 6 -------------------- */
+
+  .Privacy-body {
+    min-height: 2600px;
+  }
+
+  .Privacy-Card {
+    width: 750px;
+  }
+
+  /*----------------------- Section 8 -------------------- */
+  .Main3-div-row2 {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  /*----------------------- Section 3 -------------------- */
+
+  .Rarity-box-parent {
+    width: 80%;
+  }
+
+  .text1 {
+    display: block;
+  }
+  .text2 {
+    display: none;
+  }
+  .Rarity-heading {
+    display: none;
+  }
+  .Rarity-heading1 {
+    display: block;
+  }
+  .Avatar-div {
+    display: none;
+  }
+  .Avatar-img1 {
+    display: block;
+
+    margin-top: 100px;
+    height: 140px;
+  }
+  .Rarity-text {
+    font-size: 10px;
+    line-height: 14px;
+
+    font-family: "PressStart2P";
+    color: black;
+    align-self: center;
+    text-align: left;
+    -webkit-transform: scale(1, 1.4); /* Safari and Chrome */
+    -moz-transform: scale(1, 1.4); /* Firefox */
+    -ms-transform: scale(1, 1.4); /* IE 9 */
+    -o-transform: scale(1, 1.4); /* Opera */
+    transform: scale(1, 1.4);
+  }
+  .Class {
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .Variation {
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .Main3 {
+    display: flex;
+    background-color: #282828;
+    flex-direction: column;
+  }
+
+  /*----------------------- Section 5 -------------------- */
+  .Main3-div-row2 {
+    align-items: center;
+    flex-direction: column;
+    width: 480px;
+   
+  }
+
+  /*----------------------- Section 5-------------------- */
+  .Main4-Heading {
+    height: 35px;
+    margin: 20px 0px 20px 0px;
+  }
+  /*----------------------- Section 6-------------------- */
+  .bunny-avatar {
+    position: absolute;
+    margin-top: -30px;
+    left: 2%;
+    width: 180px;
+  }
+  .Roadmap-text {
+    margin-left: 25%;
+    width: 600px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .Privacy-body {
+    min-height: 3000px;
+  }
+
+  .Privacy-Card {
+    width: 600px;
+  }
+  /*----------------------- Section 1 -------------------- */
+  .Header {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .logo-scroll {
+    display: block;
+  }
+  .LogoImg {
+    width: 210px;
+    margin-left: 12px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    height: 180px;
+  }
+
+  .containerimg {
+    width: 300px;
+    height: 50px;
+    margin-top: 15px;
+  }
+
+  .containerimg1 {
+    width: 300px;
+    height: 50px;
+    margin-top: 15px;
+  }
+  .socialimg {
+    height: 60px;
+    width: 60px;
+  }
+
+  /*----------------------- Section 3 -------------------- */
+
+  .Main3-div-row2 {
+    align-items: center;
+    flex-direction: column;
+    width: 550px;
+  }
+.Mobile
+{
+  margin-top: 10px;
+}
+  .Main3text1 {
+    display: none;
+  }
+  .Main3text2 {
+    text-align: center;
+    display: block;
+  }
+
+  /*----------------------- Section 5 -------------------- */
+  .Main4 {
+    background-image: url("./assets/eggbx-mobile-background.png");
+  }
+  .Main4-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*----------------------- Section 4 -------------------- */
+  .Main3-div {
+    flex-direction: column;
+  }
+  .introeggjumpbox {
+    width: 400px;
+    min-height: 210px;
+    margin-bottom: 20px;
+  }
+  .introeggjump {
+    margin-top: 20px;
+    width: 300px;
+  }
+  .Main3-Litepaper {
+    display: none;
+  }
+  .Main3-Litepaper-Mobile {
+    display: block;
+  }
+
+  .Main3-text {
+    margin-top: 35px;
+  }
+  .Main3text1 {
+    display: none;
+  }
+  .Main3text2 {
+    text-align: center;
+    display: block;
+  }
+
+  .Main3-Litepaper {
+    margin-top: 20px;
+    width: 480px;
+  }
+  /*----------------------- Section 5 -------------------- */
+  .Main4-Heading {
+    height: 30px;
+    margin: 20px 0px 20px 0px;
+  }
+  /*----------------------- Section 6 -------------------- */
+  .Main5-Heading {
+    height: 40px;
+  }
+  .Roadmap-footer1 {
+    justify-content: center;
+  }
+  .bunny-avatar {
+    display: none;
+  }
+  .Roadmap-text {
+    margin-left: 0%;
+    width: 350px;
+  }
+  .small {
+    display: block;
+  }
+  .regular {
+    display: none;
+  }
+  /*----------------------- Section 7 -------------------- */
+  .Main6-Heading {
+    height: 40px;
+  }
+  /*----------------------- Section 8 -------------------- */
+
+  .Main8-Heading {
+    height: 40px;
+  }
+
+  .card-div {
+    width: 350px;
+  }
+  .label-div {
+    padding: 50px 5px 50px 5px;
+  }
+
+  /*----------------------- Section 11 -------------------- */
+  .Main11-heading {
+    width: 550px;
+  }
+  .Main11-Opensea {
+    width: 280px;
+    height: 50px;
+  }
+  .Main11-socialcontainer {
+    width: 200px;
+    padding: 20px 0px 10px 0px;
+  }
+  .Main11-socialimg {
+    height: 60px;
+    width: 60px;
+  }
+  .Main11-box {
+    width: 280px;
+
+    margin: 10px 0px 10px 0px;
+  }
+  .text-img {
+    margin-top: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 650px) {
+  /*----------------------- Section 1 -------------------- */
+  .Main {
+    background-image: url("./assets/Section1BackgroundMobile.png");
+  }
+  /*----------------------- Section 3 -------------------- */
+
+  .Rarity-box-parent {
+    width: 100%;
+  }
+
+  .Privacy-body {
+    min-height: 3500px;
+  }
+
+  .Privacy-Card {
+    width: 500px;
+  }
+
+  /*----------------------- Section 5 -------------------- */
+  .Main4-Heading {
+    height: 80px;
+    margin: 20px 0px 20px 0px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Privacy-body {
+    min-height: 3000px;
+  }
+
+  .Privacy-text {
+    font-size: 8px;
+
+    line-height: 12px;
+  }
+  .Point-heading {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .Point-text {
+    font-size: 8px;
+    line-height: 12px;
+  }
+  .Privacy-Card {
+    width: 400px;
+  }
+
+  .SubHeading-Text {
+    font-size: 6px;
+  }
+
+  /*----------------------- Section 3 -------------------- */
+
+  /*----------------------- Section 4 -------------------- */
+
+  .introeggjumpbox {
+    width: 320px;
+   
+    height: 220px;
+  }
+  .introeggjump {
+    margin-top: 20px;
+    width: 260px;
+  }
+  .Main3-Litepaper {
+    margin-top: 20px;
+    width: 300px;
+  }
+  .Main3-text {
+    font-size: 9px;
+  
+  }
+  
+
+  /*------------------------ Section 2 ------------------- */
+  .GetyourEggHeads-box {
+    width: 280px;
+    top: 0;
+
+    height: 460px;
+  }
+  .GetyourEggHeads-Heading {
+    margin-top: 70px;
+
+    width: 220px;
+    height: 80px;
+  }
+  .GetyourEggHeads-text {
+    width: 210px;
+
+    text-align: center;
+    font-size: 9px;
+    margin: 50px 0px 50px 0px;
+    line-height: 10px;
+  }
+  .HatchingSoon {
+  
+    height: 35px;
+  }
+
+  /*----------------------- Section 3 -------------------- */
+
+  .Rarity-box {
+    padding: 20px 10px 20px 10px;
+  }
+  .Rarity-text {
+    font-size: 8px;
+  }
+  .Avatar-img1 {
+    display: block;
+
+    margin-top: 120px;
+    height: 110px;
+  }
+  .Class {
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  .Variation {
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  /*----------------------- Section 8 -------------------- */
+
+  .title {
+    font-size: 12px;
+  }
+  /*----------------------- Section 11 -------------------- */
+
+  .Main11-heading {
+    width: 385px;
+  }
+  .Main11-Opensea {
+    width: 240px;
+    height: 45px;
+  }
+}
+@media screen and (max-width: 450px) {
+  /*----------------------- Section 1 -------------------- */
+  .Main {
+    background-image: url("./assets/Section1BackgroundMobile.png");
+  }
+  .textregular {
+    display: none;
+  }
+  .textsmall {
+    display: block;
+  }
+  .textimg1 {
+    margin: 20px 0px 20px 0px;
+    height: 38px;
+  }
+  .textimg {
+    height: 14px;
+  }
+  .Privacy-body {
+    min-height: 5200px;
+  }
+
+  .Privacy-Card {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 803px) {
+    .Privacy-body{
+      height: 2000px;
+    }
+
+  }
+  @media screen and (max-width: 480px) {
+
+  .PrivacyPolicyHeading{
+    width:260px;
+  }
+
+
+
+  }
+  /*----------------------- Section 3 -------------------- */
+
+  /*----------------------- Section 4 -------------------- */
+
+  .introeggjumpbox {
+    width: 260px;
+    min-height: 280px;
+  }
+  .Main3-text{
+    margin-top: 40px;
+  }
+  /*----------------------- Section 5 -------------------- */
+  .Main4-Heading {
+    height: 60px;
+    margin: 20px 0px 20px 0px;
+  }
+  /*----------------------- Section 8 -------------------- */
+  .Main8 {
+    background-image: url("./assets/faqbackground-mobile.png");
+  }
+  .card-div {
+    width: 300px;
+  }
+  .title {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Avatar-img1 {
+    margin-top: 150px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 350px) {
+  /*----------------------- Section 5 -------------------- */
+  .Main4-Heading {
+    height: 55px;
+    margin: 20px 0px 20px 0px;
+  }
+  /*----------------------- Section 6 -------------------- */
+  .Roadmap-text {
+    margin-left: 0%;
+    width: 250px;
+  }
+
+  .small {
+    display: block;
+  }
+  .regular {
+    display: none;
+  }
+
+  /*----------------------- Section 8 -------------------- */
+  .card-div {
+    width: 250px;
+  }
+  .title {
+    font-size: 12px;
+  }
+
+  /*----------------------- Section 11 -------------------- */
+
+  .Main11-heading {
+    width: 270px;
+
+    margin: 10px 0px 20px 0px;
+  }
+  .Main11-Opensea {
+    width: 150px;
+    height: 25px;
+  }
+
+  .Main11-box {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 300px) {
+  /*------------------------ Section 2 ------------------- */
+  .GetyourEggHeads-box {
+    width: 250px;
+    top: 0;
+    height: 360px;
+  }
+  .GetyourEggHeads-Heading {
+    width: 160px;
+    height: 60px;
+  }
+  .GetyourEggHeads-text {
+    width: 200px;
+    text-align: center;
+    font-size: 8px;
+    margin: 30px 0px 30px 0px;
+    line-height: 10px;
+  }
+  .HatchingSoon {
+
+    height: 30px;
+  }
+}
